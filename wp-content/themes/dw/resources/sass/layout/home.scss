@@ -25,7 +25,7 @@
 
   &__content {
     font-size: u.rem(30);
-    color: var(--text-color-gray);
+    color: #707070FF;
     margin-bottom: u.rem(50)
   }
 }
@@ -101,11 +101,11 @@
 }
 
 .presentation {
-
+  position:relative;
   text-align: center;
   /*padding-top: u.rem(60);
   padding-bottom: u.rem(75);*/
-  color: var(--text-color-blue);
+  color: #000233FF;
   /*display: flex;
   justify-content:center;*/
   &__title {
@@ -114,9 +114,13 @@
   }
   &__box{
     background-color: #486e96;
+    min-height:250px;
     color: white;
     border-radius:20px;
-    padding: 15px;
+    padding: 5% 15px;
+    @include u.breakpoints(medium){
+      text-align: left;
+    }
     a{
       background-color: hsl(0, 0%, 100%);
       padding:10px;
@@ -158,7 +162,7 @@
     &--content {
       font-weight: 500;
       font-size: u.rem(15);
-      margin-bottom: u.rem(20);
+      margin-bottom: u.rem(40);
     }
   }
 }
@@ -166,9 +170,27 @@
 .module{
   /*padding-top: u.rem(110);
   padding-bottom: u.rem(110);*/
-  &__mainTitle{
-    margin: u.rem(25);
+  position:relative;
+  padding:3vh 3vw;
+  margin: u.rem(60) 10vw u.rem(75);
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+  @include u.breakpoints(medium){
+
   }
+  @include u.breakpoints(large){
+
+
+
+
+  }
+  &__mainTitle{
+    text-align: center;
+  }
+
   &__title {
     color: #264C93;
     font-size: u.rem(30);
@@ -177,11 +199,16 @@
   }
   &__other {
     color: #264C93;
+    display:block;
+    text-align: center;
   }
   &__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    @include u.breakpoints(large){
+      flex-wrap: nowrap;
+    }
   }
   &__list{
     display: flex;
@@ -236,7 +263,11 @@
     background-color: #fff;
     border-radius: 5px;
     margin: u.rem(25);
+    max-width:450px;
     border: 1px solid #E0E0E0;
+    box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
   }
 
   &__presentation {
@@ -262,7 +293,8 @@
 .contact {
     display: flex;
     flex-direction: column;
-
+    border-top: 2px solid #516428;;
+  margin: 0 50px;
     text-align: center;
     &__title{
       color:#516428;

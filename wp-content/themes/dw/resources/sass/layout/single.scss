@@ -1,36 +1,25 @@
 @use "../util" as u;
-.presentation__article svg{
-
-    width: 150px;
-    height: 150px;
-
+.singleModule{
+  &__title{
+    font-size: u.rem(50)
+  }
+  margin: u.rem(50) 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+  @include u.breakpoints(medium){
+    margin: u.rem(50) 5vw;
+  }
+  &__content{
+    position:relative;
+    svg{
+      top: 58px;
     }
-
-.advanced__article svg{
-  path {
-    fill: white;
   }
 }
-
-.advanced{
-  color:white;
-  background: rgb(75, 110, 229);
-  background: radial-gradient(circle, rgba(75, 110, 229, 1) 0%, rgba(34, 53, 114, 1) 71%, rgba(34, 53, 114, 1) 100%);
-
-
-}
-.conclusion{
-  background-color:var(--text-color-blueGray);
-}
-.singleModule__contact{
-  text-align: center;
-
-  .contact__link{
-
-      padding: u.rem(15) u.rem(35);
-
-  }
-  .contact__content{
-    margin-bottom: u.rem(40);
-  }
+.splitLayout__box{
+  position: relative;
 }

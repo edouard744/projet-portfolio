@@ -1,20 +1,48 @@
 @use "../util" as u;
+.svgRed{
+  position:relative;
+
+}
+.svgRed > .red{
+  top: 204px;
+}
 .dev{
 &__title{
-  text-align: center;
-  font-size: u.rem(50);
-  margin-bottom: u.rem(60)
+
+  font-size: u.rem(100);
+  margin-bottom: u.rem(60);
+  @include u.breakpoints(medium){
+
+    margin: 9.55rem 5% 3.75rem;
+  }
 }
   &__container > &__card{
   min-width: 34vw;
   margin-bottom: u.rem(100);
 }
-&__container {
-  display: grid;
-  grid-template-columns: 1fr  ;
-  @include u.breakpoints(medium){
-    grid-template-columns: 1fr 1fr;
-  }
-
 }
+
+.dev__container {
+  display: grid;
+  position:relative;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  svg{
+    top: 291px;
+  }
+}
+@include u.breakpoints(medium) {
+  .dev__container > .dev__card {
+    min-width: 85vw;
+    display: flex;
+    .module__presentation {
+      max-width:100%;
+    }
+    .module__link {
+      display: grid;
+      align-items: center;
+      padding: u.rem(10) u.rem(30);
+      grid-template-columns:1fr 1fr;
+    }
+  }
 }

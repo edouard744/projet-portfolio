@@ -3,13 +3,12 @@
 .footer{
   &__body{
     background-color:#597DA2 ;
-    display: grid;
+
 
     padding-top: u.rem(114);
     padding-bottom: u.rem(62);
     color:var(--color-white);
     @include u.breakpoints(medium){
-        grid-template-columns: repeat(3,30vw);
 
       }
     }
@@ -17,17 +16,30 @@
 
     @include u.breakpoints(medium) {
       margin-right: u.rem(100);
-      border-right: 1px solid var(--color-white);
+      border-bottom: 1px solid #fff;
     }
   }
   &__link{
-    color:var(--color-white);
+    color:#fff;
     font-size: u.rem(14);
+    @include u.breakpoints(medium) {
+      margin: 0 14vw 0 0;
+
+    }
 
   }
   &__linkList{
     list-style: none;
+    flex-wrap: wrap;
     padding: 0;
+    max-width:810px;
     line-height: u.em(30);
+    @include u.breakpoints(medium) {
+      display: flex;
+      li{
+        margin: 20px 0;
+      }
+    }
+
   }
 }

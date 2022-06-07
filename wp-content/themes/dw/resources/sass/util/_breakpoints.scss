@@ -1,9 +1,8 @@
 // 700px , 900px, 1440px
 @use 'functions' as f;
 $breakpoints-up: (
-        "medium":43.75em,
+        "small":24.99875em,
         "large":56.25em,
-        "xlarge":90em,
 );
 //699.98px, 899.98px ,1439.98px
 $breakpoints-down: (

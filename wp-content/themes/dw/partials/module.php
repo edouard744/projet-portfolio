@@ -24,7 +24,7 @@
         </ul>
         <?php endif; ?>
         <p class="module__presentation"><?= get_field( 'short_presentation' ); ?></p>
-        <p class="module__hidden"><?= __( 'A propos du projet', 'dw' ); ?></p>
+        <p class="module__linkSite"><?= __( 'A propos du projet', 'dw' ); ?></p>
     </div>
     </a>
 </article>

@@ -102,7 +102,12 @@ h2{
     max-width: 100%;
   }
   &__box{
-    max-width: 45%;
+    margin: u.rem(20);
+    max-width: 90%;
+    @include u.breakpoints(medium){
+      max-width: 45%;
+
+    }
     p{
       font-size: u.rem(12);
       margin-bottom: u.rem(15);
@@ -168,6 +173,29 @@ a,a:visited,a:active {
 }
 .reveal__4{
   transition-delay: .4s;
+}
+
+svg{
+  max-width:450px;
+  position:absolute;
+  height: auto;
+  z-index: -9999;
+
+}
+.brown{
+  bottom: -50px;
+  right: -180px;
+  @include u.breakpoints(medium){
+
+    top: -130px;
+  }
+}
+.red{
+  top: -67px;
+  left: -209px;
+  @include u.breakpoints(medium){
+    bottom: 90px;
+  }
 }
 #wpcf7-f64-o1{
   display:flex;
