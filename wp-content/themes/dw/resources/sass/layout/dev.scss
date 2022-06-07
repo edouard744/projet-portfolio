@@ -1,0 +1,20 @@
+@use "../util" as u;
+.dev{
+&__title{
+  text-align: center;
+  font-size: u.rem(50);
+  margin-bottom: u.rem(60)
+}
+  &__container > &__card{
+  min-width: 34vw;
+  margin-bottom: u.rem(100);
+}
+&__container {
+  display: grid;
+  grid-template-columns: 1fr  ;
+  @include u.breakpoints(medium){
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+}

@@ -1,0 +1,175 @@
+@use "../util" as u;
+
+
+html{
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: center;
+  overflow-x: hidden;
+  @include u.breakpoints(medium){
+    font-size: 14px;
+    text-align: left;
+  }
+  @include u.breakpoints-down(large){
+    font-size: 16px;
+  }
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+
+}
+img{
+  width:100%;
+  height:auto;
+}
+p{
+  margin: auto;
+}
+ul{
+  list-style:none;
+  padding-inline-start: 0;
+}
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "inter", sans-serif;
+  background-color:var(--background-color);
+}
+/*body::after {
+  content: "";
+  height: 2px;
+  position:fixed;
+  top: calc(50% - 1px);
+  left:0;
+  right:0;
+  background-color:red;
+  z-index: 10;
+}*/
+.section{
+  padding: u.rem(60) 10px u.rem(75);
+
+  @include u.breakpoints(medium){
+    padding: u.rem(60) u.rem(50) u.rem(75);
+  }
+
+}
+a{
+  color: var(--text-color-black);
+}
+h2{
+  font-size: u.rem(30);
+}
+.hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.greenLink{
+  padding: u.rem(20) u.rem(50);
+  background-color: #516428;
+  border-radius:5px;
+  color: var(--color-white)
+}
+.title{
+  font-size: u.rem(30);
+}
+
+
+.thin{
+  font-weight:300;
+}
+
+
+.splitLayout{
+
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  @include u.breakpoints(medium){
+    flex-direction: row;
+    justify-content:space-evenly;
+  }
+  &__title{
+    margin-bottom: u.rem(20);
+
+  }
+  img{
+    max-width: 100%;
+  }
+  &__box{
+    max-width: 45%;
+    p{
+      font-size: u.rem(12);
+      margin-bottom: u.rem(15);
+      @include u.breakpoints(medium){
+        font-size: 1rem;
+        max-width: 430px;
+      }
+
+    }
+  }
+
+}
+.bluegray{
+  background-color: hsl(228, 100%, 98%);
+}
+.content{
+  line-height: 1.5em;
+}
+
+h1,h2,h3{
+  font-weight:700;
+  line-height:1.1;
+  margin-top:0;
+}
+h1{
+  font-size: u.rem(36);
+
+  @include u.breakpoints(medium){
+    font-size: u.rem(50);
+  }
+}
+p {
+  margin-top:0;
+
+}
+
+a,a:visited,a:active {
+  text-decoration:none;
+}
+
+.testfont{
+  font-size:1rem;
+}
+
+// animation css reveal
+.reveal{
+  opacity: 0;
+  transform: translateY(30px);
+}
+.active{
+  opacity: 1;
+  transform: translateY(0);
+  transition: .5s cubic-bezier(.5,-0.03,.32,.92);
+}
+.reveal__1{
+  transition-delay:.1s;
+}
+.reveal__2{
+  transition-delay:.2s;
+}
+.reveal__3{
+  transition-delay: .3s;
+}
+.reveal__4{
+  transition-delay: .4s;
+}
+#wpcf7-f64-o1{
+  display:flex;
+  justify-content: center;
+}

@@ -1,0 +1,33 @@
+@use "../util" as u;
+
+.footer{
+  &__body{
+    background-color:#597DA2 ;
+    display: grid;
+
+    padding-top: u.rem(114);
+    padding-bottom: u.rem(62);
+    color:var(--color-white);
+    @include u.breakpoints(medium){
+        grid-template-columns: repeat(3,30vw);
+
+      }
+    }
+  &__card{
+
+    @include u.breakpoints(medium) {
+      margin-right: u.rem(100);
+      border-right: 1px solid var(--color-white);
+    }
+  }
+  &__link{
+    color:var(--color-white);
+    font-size: u.rem(14);
+
+  }
+  &__linkList{
+    list-style: none;
+    padding: 0;
+    line-height: u.em(30);
+  }
+}

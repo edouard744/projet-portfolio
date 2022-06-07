@@ -1,0 +1,36 @@
+@use "../util" as u;
+.presentation__article svg{
+
+    width: 150px;
+    height: 150px;
+
+    }
+
+.advanced__article svg{
+  path {
+    fill: white;
+  }
+}
+
+.advanced{
+  color:white;
+  background: rgb(75, 110, 229);
+  background: radial-gradient(circle, rgba(75, 110, 229, 1) 0%, rgba(34, 53, 114, 1) 71%, rgba(34, 53, 114, 1) 100%);
+
+
+}
+.conclusion{
+  background-color:var(--text-color-blueGray);
+}
+.singleModule__contact{
+  text-align: center;
+
+  .contact__link{
+
+      padding: u.rem(15) u.rem(35);
+
+  }
+  .contact__content{
+    margin-bottom: u.rem(40);
+  }
+}

@@ -1,0 +1,194 @@
+/*
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-Regular.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-Regular.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-Black.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-Black.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-Bold.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-Bold.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-BoldItalic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-BoldItalic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-BlackItalic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-BlackItalic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-Light.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-Light.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-ExtraBold.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-ExtraBold.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-Italic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-Italic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-SemiBold.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-SemiBold.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-LightItalic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-LightItalic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-SemiBoldItalic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-SemiBoldItalic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-MediumItalic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-MediumItalic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-Medium.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-Medium.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('wp-content/themes/dw/font/Rubik-ExtraBoldItalic.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/Rubik-ExtraBoldItalic.woff') format('woff'),
+  url('wp-content/themes/dw/font/Rubik-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'Fira_Code';
+  src: url('wp-content/themes/dw/font/FiraCode-Bold.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/FiraCode-Bold.woff') format('woff'),
+  url('wp-content/themes/dw/font/FiraCode-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Fira_Code';
+  src: url('wp-content/themes/dw/font/FiraCode-Medium.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/FiraCode-Medium.woff') format('woff'),
+  url('wp-content/themes/dw/font/FiraCode-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Fira_Code_light';
+  src: url('wp-content/themes/dw/font/FiraCode-Light.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/FiraCode-Light.woff') format('woff'),
+  url('wp-content/themes/dw/font/FiraCode-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Fira_Code';
+  src: url('wp-content/themes/dw/font/FiraCode-SemiBold.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/FiraCode-SemiBold.woff') format('woff'),
+  url('wp-content/themes/dw/font/FiraCode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Fira_Code';
+  src: url('wp-content/themes/dw/font/FiraCode-Regular.woff2') format('woff2'),
+  url('wp-content/themes/dw/font/FiraCode-Regular.woff') format('woff'),
+  url('wp-content/themes/dw/font/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*/
