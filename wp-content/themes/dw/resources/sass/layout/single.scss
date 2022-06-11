@@ -1,9 +1,13 @@
 @use "../util" as u;
 .singleModule{
+
   &__title{
     font-size: u.rem(50)
   }
-  margin: u.rem(50) 10px;
+  &__info{
+    line-height:1.5em;
+  }
+  margin: -167px  10px u.rem(50);
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #E0E0E0;

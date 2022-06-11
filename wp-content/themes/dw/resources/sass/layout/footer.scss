@@ -1,6 +1,15 @@
 @use "../util" as u;
 
 .footer{
+  p{
+    margin-right: 0;
+  }
+  svg{
+    position:inherit;
+    z-index: inherit;
+
+
+  }
   &__body{
     background-color:#597DA2 ;
 
@@ -21,24 +30,35 @@
   }
   &__link{
     color:#fff;
+    margin-left: 10px;
+    display: inline;
     font-size: u.rem(14);
-    @include u.breakpoints(medium) {
-      margin: 0 14vw 0 0;
-
-    }
 
   }
   &__linkList{
+    @media(max-width: 700px) {
+      li {
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center
+      }
+    }
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
     max-width:810px;
     line-height: u.em(30);
-    @include u.breakpoints(medium) {
-      display: flex;
+    @media( min-width:701px){
+      display: grid;
+      grid-gap: 0 50px;
+      grid-template-columns: 1fr 1fr 1fr;
       li{
         margin: 20px 0;
+        display: flex;
+        align-items: center;
       }
+
     }
 
   }

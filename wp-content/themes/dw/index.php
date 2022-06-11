@@ -5,7 +5,7 @@
 
         <section class="intro section">
             <div class="intro__card">
-                <p><span>Bonjour</span>, je m'appelle</p>
+                <p class="intro__hello"><span class="intro__border">Bonjour</span>, je m'appelle</p>
                 <h1 class="intro__main--title js">Willems Edouard</h1>
                 <p class="intro__content js">Web Développeur</p>
             </div>
