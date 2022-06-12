@@ -1,6 +1,14 @@
 @use "../util" as u;
 .singleModule{
-
+  &__link{
+    display: block;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    width: 20%;
+    margin: 0 auto;
+  }
   &__title{
     font-size: u.rem(50)
   }
@@ -21,6 +29,9 @@
     position:relative;
     svg{
       top: 58px;
+    }
+    .module__list{
+      justify-content:left;
     }
   }
 }

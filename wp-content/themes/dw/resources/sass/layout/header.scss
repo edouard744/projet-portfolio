@@ -21,7 +21,7 @@
   padding:20px
 }
 .header {
-  margin-bottom: u.rem(200);
+  margin-bottom: 31vw;
   @include u.breakpoints(medium){
 
     border-bottom: 5px solid #EDEDED;
@@ -37,7 +37,9 @@
     width: 60vw;
     top: -159px;
     right: -109px;
-
+    @media (max-width: 700px) {
+      width:90vw;
+    }
   }
   display: flex;
   align-items: center;

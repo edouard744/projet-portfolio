@@ -127,6 +127,7 @@
     padding: 3% 15px;
     @include u.breakpoints(medium){
       text-align: left;
+      padding: 3% 50px;;
     }
     a{
       background-color: hsl(0, 0%, 100%);
@@ -134,6 +135,13 @@
       font-weight: 600;
       padding: 15px 35px;
       font-size: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    a:hover{
+      color: white;
+      border: 1px solid hsl(0, 0%, 100%);
+      background-color:#486e96;
     }
     @include u.breakpoints(medium){
       max-width: 610px;
@@ -169,7 +177,7 @@
     }
     &--content {
       font-weight: 500;
-      font-size: u.rem(15);
+      font-size: u.rem(20);
       margin-bottom: u.rem(40);
     }
   }
@@ -180,7 +188,11 @@
   padding-bottom: u.rem(110);*/
   position:relative;
   padding:3vh 3vw;
-  margin: u.rem(60) 10vw u.rem(75);
+  margin-bottom: u.rem(75);
+  @media(min-width: 701px){
+    margin: u.rem(60) 10vw u.rem(75);
+  }
+
   background: white;
   border-radius: 5px;
   box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
@@ -258,15 +270,16 @@
     text-align: center
   }
 
-  &__link:hover > &__box > &__hidden {
+  &__link:hover{
     visibility: visible;
-    color: hsl(238, 100%, 10%)
+    transform: none;
 
   }
 
   &__link:hover > &__box> &__linkSite {
     background-color: #264C93;
     color: hsl(0, 0%, 100%);
+    transform: scale(1.1);
     transition: all 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
     transition-delay:.2s;
   }
@@ -281,26 +294,19 @@
   &__card {
     background-color: #fff;
     border-radius: 5px;
-    margin: u.rem(25);
-    max-width:450px;
-    border: 1px solid #E0E0E0;
+    margin: u.rem(25) 0;
+
     box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
     -webkit-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
     -moz-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.15);
+    @media(min-width: 701px) {
+      margin: u.rem(25);
+      max-width:450px;
+    }
   }
-
   &__presentation {
     font-size: u.rem(15);
     max-width: u.rem(320);
-  }
-
-  &__mobility {
-    font-size: u.rem(12);
-    @include u.breakpoints(medium){
-      font-size: u.rem(14)
-    }
-    font-family: 'Fira Code', serif;
-
   }
 }
 
@@ -320,6 +326,7 @@
   }
 .form {
     display: grid;
+  position: relative;
     grid-template-rows: repeat(4, 15%) 30%;
     text-align: left;
     margin-bottom: u.rem(200);
@@ -385,10 +392,12 @@
 
 
     }
+
     &__button{
       border:none;
       width: 50%;
       margin: auto;
+      min-height: 50px;
     }
     &__input {
       /*width: inherit;*/

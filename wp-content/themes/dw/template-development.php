@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 	<main class="layout development section">
         <div class="svgRed">
-		<h2 class="dev__title"><?= __('Mes projets', 'dw'); ?></h2>
+		<h2 class="dev__title js"><?= __('Mes projets', 'dw'); ?></h2>
         <svg class="red" xmlns="http://www.w3.org/2000/svg" width="808" height="808" viewBox="0 0 808 808">
             <circle id="Ellipse_3" data-name="Ellipse 3" cx="404" cy="404" r="404" fill="#a25959"/>
         </svg>

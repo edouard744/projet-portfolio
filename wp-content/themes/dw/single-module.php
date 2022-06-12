@@ -22,7 +22,7 @@
                 <p class="singleModule__info"> <?= get_field( 'presentation' ); ?></p>
                 </div>
                 <div class="singleModule__image splitLayout">
-                    <div class="splitLayout__box">
+                    <div class="splitLayout__box left">
 
                     <?php
                     $image = get_field('short_image');
@@ -32,7 +32,7 @@
                     }
                     ?>
                     </div>
-                    <div class="splitLayout__box">
+                    <div class="splitLayout__box right">
                     <?php
                     $image = get_field('short_image');
                     $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -47,9 +47,8 @@
 
                 </div>
 
-                 <a href="<?= get_field("link")?>" class="singleModule__link"></a>
+                 <a href="<?= get_field("link")?>" class="singleModule__link">Visiter le site</a>
         </section>
-
     </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

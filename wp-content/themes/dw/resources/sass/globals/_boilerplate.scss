@@ -7,12 +7,10 @@ html{
   text-align: center;
   overflow-x: hidden;
   @include u.breakpoints(medium){
-    font-size: 14px;
+    font-size: 17px;
     text-align: left;
   }
-  @include u.breakpoints-down(large){
-    font-size: 16px;
-  }
+
 }
 *,*::before,*::after {
   box-sizing: inherit;
@@ -21,6 +19,7 @@ html{
 img{
   width:100%;
   height:auto;
+  border-radius: 5px 5px 0px 0px;
 }
 p{
   margin: auto;
@@ -36,16 +35,17 @@ body{
   font-family: "inter", sans-serif;
   background-color:var(--background-color);
 }
-/*body::after {
-  content: "";
-  height: 2px;
-  position:fixed;
-  top: calc(50% - 1px);
-  left:0;
-  right:0;
-  background-color:red;
-  z-index: 10;
-}*/
+.wpcf7-not-valid-tip{
+  padding:10px;
+}
+@media (min-width:701px){
+  .wpcf7-response-output{
+    bottom: -60px;
+    right: 80px;
+    position: absolute;
+  }
+}
+
 .section{
   padding: u.rem(60) 10px u.rem(75);
 
@@ -56,6 +56,10 @@ body{
 }
 a{
   color: var(--text-color-black);
+}
+a:hover{
+  transform: scale(1.2);
+  transition: transform .1s linear;
 }
 h2{
   font-size: u.rem(30);
@@ -74,6 +78,10 @@ h2{
   background-color: #516428;
   border-radius:5px;
   color: var(--color-white)
+}
+.greenLink:hover{
+  background-color: #88ab46;
+  transition: background-color .3s linear;
 }
 .title{
   font-size: u.rem(30);
@@ -100,6 +108,7 @@ h2{
   }
   img{
     max-width: 100%;
+
   }
   &__box{
     margin: u.rem(20);
@@ -147,16 +156,12 @@ p {
 a,a:visited,a:active {
   text-decoration:none;
 }
-
-.testfont{
-  font-size:1rem;
-}
-
 // animation css reveal
 .reveal{
   opacity: 0;
   transform: translateY(30px);
 }
+
 .active{
   opacity: 1;
   transform: translateY(0);
